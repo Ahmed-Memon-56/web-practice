@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        #top {
+            background-color: white;
+            width: 100%;
+            height: 50px;
+        }
+
+        #hw {
+            float: left;
+            padding: 10px;
+            margin: 10px;
+            color: gray;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        ul {
+            float: right;
+            padding-right: 10px;
+            margin-right: 10px;
+
+        }
+
+        li {
+
+            display: inline-block;
+            margin: 8px;
+            padding-right: 10px;
+            padding-bottom: -10px;
+            vertical-align: middle;
+            font-size: 15px;
+            color: gray;
+
+        }
+
+        nav {
+            width: 100%;
+            display: inline-block;
+            margin: 0px 0px 20px 0px;
+        }
+
+        .logo {
+            float: left;
+            width: 100px;
+            height: auto;
+            margin: 5px 0px 10px 20px;
+        }
+
+        .nav {
+            float: right;
+            margin: 10px;
+            width: 70%;
+            padding: 10px;
+            vertical-align: middle;
+
+
+        }
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 10px;
+            color: black;
+
+        }
+
+        .h {
+            background-color: rgb(95, 158, 0);
+            border-bottom: 3px solid green;
+            color: white;
+        }
+
+        a:hover {
+            background-color: rgb(95, 158, 0);
+            border-bottom: 3px solid green;
+            color: white;
+        }
+
+        #card {
+            width: 40%;
+            height: auto;
+            display: inline-block;
+            margin-left: 70px;
+            margin-bottom: 40px;
+            position: relative;
+            top: 20px;
+
+
+        }
+
+
+        .card1>img {
+            width: 100%;
+            height: auto;
+
+
+
+
+        }
+
+        .item-name {
+            text-align: center;
+            position: absolute;
+            bottom: 70px;
+            left: 20px;
+            color: white;
+
+        }
+
+        .item-name>button {
+            border-left: 3px solid green;
+        }
+
+        button {
+            background-color: rgb(125, 206, 4);
+
+            border: none;
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: rgb(1, 175, 1);
+            border-left: 3px solid rgb(125, 206, 4);
+        }
+
+
+        h1 {
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .cards {
+            width: 30%;
+            height: auto;
+            display: inline-block;
+            text-align: center;
+            margin-left: 20px;
+
+        }
+
+        .Food-pic>img {
+            width: 80%;
+            height: auto;
+            text-align: center;
+            border-bottom: 3px solid green;
+
+
+        }
+
+        .recipie-contant {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .rating {
+            text-align: center;
+            color: orange;
+            margin-bottom: 10px;
+            font-size: 12px;
+            margin-bottom: 30px;
+        }
+
+        .Gluten {
+            position: relative;
+        }
+
+        .Gluten-img>img {
+            width: 100%;
+            height: auto;
+
+        }
+
+        .Gluten-recipie {
+            text-align: center;
+            position: absolute;
+            bottom: 300px;
+            color: white;
+            margin: 0px 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            font-family: sans-serif;
+
+        }
+
+        .Gluten-recipie>h1 {
+            font-size: 70px;
+
+        }
+
+        .Gluten-recipie>button {
+            background-color: rgb(95, 158, 0);
+            border: none;
+            border-left: 3px solid green;
+        }
+
+        .Gluten-recipie>button:hover {
+            background-color: rgb(1, 175, 1);
+            border-left: 3px solid rgb(125, 206, 4);
+        }
+
+        .main {
+
+            width: 100%;
+            margin-left: 50px;
+
+        }
+
+        .display {
+            width: 100%;
+            margin: 20px;
+            font-family: sans-serif;
+            
+        }
+
+        .item-list {
+            display: inline-block;
+            width: 30%;
+
+        }
+
+        .s-pic>img {
+            width: 20%;
+            height: auto;
+            margin: 20px;
+            text-align: left;
+
+        }
+
+        .text>h3 {
+            width: 100%;
+        }
+
+        .text>p {
+            color: rgb(95, 158, 0);
+
+        }
+
+        .star>.fa-star,
+        .fa-regular .fa-star {
+            color: orange;
+            font-size: 12px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    dis
+    <div id="top">
+        <div id="hw">HELLO WORLD</div>
+        <ul class="icon">
+            <li><i class="fa-brands fa-pinterest"></i></li>
+            <li> <i class="fa-brands fa-facebook-f"></i></li>
+            <li> <i class="fa-brands fa-twitter"></i></li>
+            <li> <i class="fa-brands fa-dribbble"></i></li>
+            <li> <i class="fa-brands fa-behance"></i></li>
+            <li><i class="fa-brands fa-linkedin-in"></i></li>
+        </ul>
+    </div>
+    <header>
+
+        <nav>
+            <img src="https://preview.colorlib.com/theme/delicious/img/core-img/logo.png.webp" alt="" class="logo">
+            <div class="nav">
+                <a href="" class="h">home</a>
+                <a href="">pages</a>
+                <a href="">mega menu</a>
+                <a href="">recipies</a>
+                <a href="">4 vengens</a>
+                <a href="">contact</a>
+                <a href="" style="color:  rgb(194, 193, 193);"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </nav>
+
+    </header>
+    <div id="card">
+        <div class="card1">
+            <img src="https://preview.colorlib.com/theme/delicious/img/bg-img/bg2.jpg.webp" alt="">
+        </div>
+        <div class="item-name">
+            <h1>Strawberry Cake</h1>
+            <p>Simple & Delicios</p>
+            <button>See Full Recipie</button>
+        </div>
+    </div>
+    <div id="card">
+        <div class="card1">
+            <img src="https://preview.colorlib.com/theme/delicious/img/bg-img/bg3.jpg.webp" alt="">
+
+        </div>
+        <div class="item-name">
+            <h1>Chinesse Noodles</h1>
+            <p>Simple & Delicios</p>
+            <button>See Full Recipie</button>
+        </div>
+    </div>
+
+    <!----------------------------Recipies--------------------------------------------------->
+    <div id="recipies">
+        <h1>The Best Recipies</h1>
+        <div class="cards">
+            <div class="Food-pic"> <img src="https://preview.colorlib.com/theme/delicious/img/bg-img/r1.jpg.webp"
+                    alt=""></div>
+            <div class="recipie-contant">
+                <h3>Sushi Easy Recipie</h3>
+            </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="Food-pic"> <img src="https://preview.colorlib.com/theme/delicious/img/bg-img/r2.jpg.webp"
+                    alt=""></div>
+            <div class="recipie-contant">
+                <h3>Homemade Burger</h3>
+            </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="Food-pic"> <img src="https://preview.colorlib.com/theme/delicious/img/bg-img/r3.jpg.webp"
+                    alt=""></div>
+            <div class="recipie-contant">
+                <h3>Vegan smoothie</h3>
+            </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="Food-pic"> <img src="https://preview.colorlib.com/theme/delicious/img/bg-img/r4.jpg.webp"
+                    alt=""></div>
+            <div class="recipie-contant">
+                <h3>Calabasa Soup</h3>
+            </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="Food-pic"> <img src="https://preview.colorlib.com/theme/delicious/img/bg-img/r5.jpg.webp"
+                    alt=""></div>
+            <div class="recipie-contant">
+                <h3>Homemade Breakfast</h3>
+            </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="Food-pic"> <img src="https://preview.colorlib.com/theme/delicious/img/bg-img/r6.jpg.webp"
+                    alt=""></div>
+            <div class="recipie-contant">
+                <h3>Healthy Fruit Desert</h3>
+            </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+    </div>
+    <!----------------------------Gluten Recipie------------------------------------------------------------>
+    <div class="Gluten">
+        <div class="Gluten-img"> <img src="https://preview.colorlib.com/theme/delicious/img/bg-img/bg4.jpg.webp" alt="">
+        </div>
+
+        <div class="Gluten-recipie">
+            <h1>Gluten Free Receipies</h1>
+            <p>Fusce nec ante vitae lacus aliquet vulputate. Donec scelerisque accumsan molestie. Vestibulum ante ipsum
+                primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras sed accumsan neque. Ut vulputate,
+                lectus vel aliquam congue, risus leo elementum nibh</p>
+            <button>Discover All The Recipies</button>
+        </div>
+    </div>
+    <!----------------------------------------------Item List---------------------------------------------------------------------->
+    <div class="main">
+        <div class="item-list">
+            <div class="s-pic">
+                <img src="https://preview.colorlib.com/theme/delicious/img/bg-img/sr1.jpg.webp" alt="">
+            </div>
+            <div class="display">
+                <div class="text">
+                    <p>January 04, 2018</p>
+                    <h3>Homemade italian pasta</h3>
+                </div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <br>
+                    2 comment
+                </div>
+            </div>
+
+        </div>
+        <div class="item-list">
+            <div class="s-pic">
+                <img src="https://preview.colorlib.com/theme/delicious/img/bg-img/sr2.jpg.webp" alt="">
+            </div>
+            <div class="display">
+                <div class="text">
+                    <p>January 04, 2018</p>
+                    <h3>Baked Bread</h3>
+                </div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <br>
+                    2 comment
+                </div>
+            </div>
+
+        </div>
+        <div class="item-list">
+            <div class="s-pic">
+                <img src="https://preview.colorlib.com/theme/delicious/img/bg-img/sr3.jpg.webp" alt="">
+            </div>
+            <div class="display">
+                <div class="text">
+                    <p>January 04, 2018</p>
+                    <h3>Scalops on salt</h3>
+                </div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <br>
+                    2 comment
+                </div>
+            </div>
+
+        </div>
+        <div class="item-list">
+            <div class="s-pic">
+                <img src="https://preview.colorlib.com/theme/delicious/img/bg-img/sr4.jpg.webp" alt="">
+            </div>
+            <div class="display">
+                <div class="text">
+                    <p>January 04, 2018</p>
+                    <h3>Fruits on plate</h3>
+                </div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <br>
+                    2 comment
+                </div>
+            </div>
+
+        </div>
+        <div class="item-list">
+            <div class="s-pic">
+                <img src="https://preview.colorlib.com/theme/delicious/img/bg-img/sr5.jpg.webp" alt="">
+            </div>
+            <div class="display">
+                <div class="text">
+                    <p>January 04, 2018</p>
+                    <h3>Macaroons</h3>
+                </div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <br>
+                    2 comment
+                </div>
+            </div>
+
+        </div>
+        <div class="item-list">
+            <div class="s-pic">
+                <img src="https://preview.colorlib.com/theme/delicious/img/bg-img/sr6.jpg.webp" alt="">
+            </div>
+            <div class="display">
+                <div class="text">
+                    <p>January 04, 2018</p>
+                    <h3>Chocolate tart</h3>
+                </div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <br>
+                    2 comment
+                </div>
+            </div>
+
+        </div>
+        <div class="item-list">
+            <div class="s-pic">
+                <img src="https://preview.colorlib.com/theme/delicious/img/bg-img/sr7.jpg.webp" alt="">
+            </div>
+            <div class="display">
+                <div class="text">
+                    <p>January 04, 2018</p>
+                    <h3>Berry Desert</h3>
+                </div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <br>
+                    2 comment
+                </div>
+            </div>
+
+        </div>
+        <div class="item-list">
+            <div class="s-pic">
+                <img src="https://preview.colorlib.com/theme/delicious/img/bg-img/sr8.jpg.webp" alt="">
+            </div>
+            <div class="display">
+                <div class="text">
+                    <p>January 04, 2018</p>
+                    <h3>Zucchini Grilled on peper</h3>
+                </div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <br>
+                    2 comment
+                </div>
+            </div>
+
+        </div>
+        <div class="item-list">
+            <div class="s-pic">
+                <img src="https://preview.colorlib.com/theme/delicious/img/bg-img/sr9.jpg.webp" alt="">
+            </div>
+            <div class="display">
+                <div class="text">
+                    <p>January 04, 2018</p>
+                    <h3>Chicken Salad</h3>
+                </div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <br>
+                    2 comment
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
